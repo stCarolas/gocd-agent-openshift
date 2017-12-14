@@ -20,7 +20,7 @@
 FROM gocd/gocd-agent-centos-7:v17.11.0
 RUN \
   echo "go    ALL=NOPASSWD: ALL" >> /etc/sudoers && \
-  yum -y install sudo && \
+  yum -y install sudo maven && \
   curl --fail --location --silent --show-error "https://github.com/openshift/origin/releases/download/v3.7.0/openshift-origin-client-tools-v3.7.0-7ed6862-linux-64bit.tar.gz" > /tmp/oc.tar.gz && \
   cd /tmp && \
   tar -zxvf /tmp/oc.tar.gz && \
