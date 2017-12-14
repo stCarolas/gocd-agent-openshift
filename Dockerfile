@@ -17,7 +17,7 @@
 # Please file any issues or PRs at https://github.com/gocd/docker-gocd-agent
 ###############################################################################################
 
-FROM gocd/gocd-agent-centos-7:v17.11.0
+FROM gocd/gocd-agent-centos-7:v17.12.0
 RUN \
   echo "go    ALL=NOPASSWD: ALL" >> /etc/sudoers && \
   yum -y install sudo maven && \
